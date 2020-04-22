@@ -49,3 +49,16 @@ Cleanup
 $ docker-compose down -v --rmi local --remove-orphans
 
 ```
+
+# Using RedisInsight
+
+
+```
+docker run -v redisinsight:/db -p 8001:8001 redislabs/redisinsight
+```
+
+While connecting to Redis use the below IP/Hostname:
+
+```
+host.docker.internal
+```
