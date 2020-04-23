@@ -62,3 +62,30 @@ While connecting to Redis use the below IP/Hostname:
 ```
 host.docker.internal
 ```
+
+## RedisGraph
+
+
+```
+MATCH (a:actor{actor_id:1}) RETURN a
+```
+
+```
+FT.SEARCH ms:search:index:movies "wars -Strip -Sith" RETURN 1 title
+```
+
+```
+FT.SEARCH ms:search:index:movies "redis " RETURN 2 title plot
+```
+
+```
+FT.AGGREGATE ms:search:index:movies: "@release_year:2015" GROUPBY 1 @genre REDUCE COUNT 0 AS sum SORTBY 2 @genre ASC MAX 100
+```
+
+## RediSearch
+
+```
+"stars jedi dooku"
+```
+
+
