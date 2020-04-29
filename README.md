@@ -70,6 +70,10 @@ host.docker.internal
 MATCH (a:actor{actor_id:1}) RETURN a
 ```
 
+## RediSearch
+
+Type wars -Strip -Sith on Web & "wars -Strip -Sith" on RedisInsight
+
 ```
 FT.SEARCH ms:search:index:movies "wars -Strip -Sith" RETURN 1 title
 ```
