@@ -74,6 +74,14 @@ MATCH (a:actor{actor_id:1}) RETURN a
 
 Type wars -Strip -Sith on Web & "wars -Strip -Sith" on RedisInsight
 
+You can also do search with "wars -Strip redis" RETURN 1 title
+
+```
+"wars -Strip redis " RETURN 2 title plot
+```
+
+
+
 ```
 FT.SEARCH ms:search:index:movies "wars -Strip -Sith" RETURN 1 title
 ```
